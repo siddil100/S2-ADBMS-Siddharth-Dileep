@@ -1,0 +1,60 @@
+Time	SQL
+05:12:04	insert into borrow values('L481','KRANTI','NEHRU PLACE',3000.00)
+05:12:04	insert into borrow values('L371','PRAMOD','VIRAR',8000.00)
+05:12:04	insert into borrow values('L321','MADHURI','ANDHERI',2000.00)
+05:12:04	insert into borrow values('L311','SUNIL','DHARAMPETH',3000.00)
+05:12:04	insert into borrow values('L206','MEHUL','AJNI',5000.00)
+05:07:25	insert into borrow values('L201','ANIL','VRCE',1000.00)
+05:04:57	insert into deposit values('D109','MINU','POWAI',7000.00,'95-08-10')
+05:04:57	insert into deposit values('D108','KRANTI','NEHRU PLACE',5000.00,'95-07-02')
+05:04:57	insert into deposit values('D107','SHIVANI','VIRAR',1000.00,'95-09-05')
+05:04:57	insert into deposit values('D106','SANDIP','ANDHERI',2000.00,'96-03-31')
+05:04:57	insert into deposit values('D105','PRAMOD','MG ROAD',3000.00,'96-03-27')
+05:04:57	insert into deposit values('D104','MADHURI','CHANDNI',1200.00,'95-12-17')
+05:04:57	insert into deposit values('D102','MEHUL','KAROLBAGH',3500.00,'95-11-17')
+05:04:57	insert into deposit values('D101','SUNIL','ANJNI',500.00,'96-01-04')
+04:48:24	insert into deposit values('D100','ANIL','VRCE',1000.00,'1995-03-01')
+04:47:41	insert into deposit values('D100','ANIL','VRCE',1000.00,1995-MAR-01)
+04:46:20	insert into deposit values('D100','ANIL','VRCE',1000.00,95-MAR-01)
+04:36:52	insert into branch values('MG ROAD','BANGLORE')
+04:34:28	insert into branch values('MG ROAD','BANGALORE')
+04:34:28	insert into branch values('DHARAMPETH','NAGPUR')
+04:34:28	insert into branch values('CHANDNI','DELHI')
+04:34:28	insert into branch values('KAROLBAGH','DELHI')
+04:34:28	insert into branch values('AJNI','NAGPUR')
+04:27:46	insert into branch values('VRCE','NAGPUR')
+04:25:23	insert into customer values('NAREN','BOMBAY')
+04:25:22	insert into customer values('KRANTI','BOMBAY')
+04:25:22	insert into customer values('SHIVANI','BOMBAY')
+04:25:22	insert into customer values('SANDIP','SURAT')
+04:25:22	insert into customer values('PRAMOD','NAGPUR')
+04:25:22	insert into customer values('MADHURI','NAGPUR')
+04:25:22	insert into customer values('MANDAR','PATNA')
+04:14:58	SELECT* FROM CUSTOMER
+04:14:38	insert into customer values('MEHUL','BARODA')
+04:14:38	insert into customer values('SUNIL','DELHI')
+04:14:37	insert into customer values('ANIL','CALCUTTA')
+04:12:33	create table deposit(acno varchar(5) check(acno like 'd%')primary key,cname varchar(15)references customer(cname),bname varchar(20)references branch(bname),amount float(8) check(amount>0)not null,adate date)
+04:05:45	create table borrow(loanno varchar(8) check(loanno like 'l%')primary key,cname varchar(15)references customer(cname),bname varchar(20)references branch(bname),amount float(8)check(amount>0)not null)
+03:59:31	create table branch(bname varchar(20) primary key,city varchar(30) check(city in('nagpur','delhi','banglore','bombay'))not null)
+03:57:53	select * from branch
+03:57:42	drop table branch
+03:55:52	create table customer(cname varchar(15) primary key,city varchar(20) not null)
+03:49:32	create table branch(bname varchar(20) primary key,city varchar(30) not null)
+03:46:36	use q1
+03:46:28	create database q1
+ use q1
+03:46:21	create database q1
+ use q1
+03:46:10	create database q1
+03:39:43	select* from tbl
+03:39:33	select* from sid
+03:37:47	select* from sid
+03:37:45	select* from sid
+03:37:16	insert into tbl(id,sname) values(2,"shon")
+03:32:40	insert into tbl values(1,"siddharth")
+03:32:28	insert into tbl values(1,siddharth)
+03:31:10	select* from tbl
+03:30:25	create table tbl(id int,sname varchar(20))
+03:28:42	use sid
+03:28:28	create database sid
